@@ -1,45 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GTA 5 Mods Showcase</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Number Guessing Game</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+</style>
 </head>
 <body>
-    <header>
-        <h1>GTA 5 Mods Showcase</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Mods</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Register</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="register">
-            <h2>Register</h2>
-            <form id="registerForm" method="post" action="register.php">
-                <input type="text" name="username" placeholder="Username" required><br>
-                <input type="password" name="password" placeholder="Password" required><br>
-                <button type="submit">Register</button>
-            </form>
-        </section>
+    <h1>Number Guessing Game</h1>
+    <p>Guess a number between 1 and 100:</p>
+    <input type="number" id="guessInput">
+    <button onclick="checkGuess()">Guess</button>
+    <p id="message"></p>
 
-        <section id="login" style="display: none;">
-            <h2>Login</h2>
-            <form id="loginForm" method="post" action="login.php">
-                <input type="text" name="username" placeholder="Username" required><br>
-                <input type="password" name="password" placeholder="Password" required><br>
-                <button type="submit">Login</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 GTA 5 Mods Showcase</p>
-    </footer>
-    <script src="scripts.js"></script>
-</body>
-</html>
+    <script>
+        // Generate a random number between 1 and 100
+        const randomNumber = Math.floor(Math.random() * 100) + 1;
+        let attempts = 0;
+
+        function checkGuess() {
+            // Get user's guess
+            const userGuess = parseInt(document.getElementById('guessInput').value);
+            attempts++;
+
+            // Check if the guess is correct
+            if (userGuess === randomNumber) {
+                document.getElementById('message').innerHTML = `Congratulations! You g

@@ -1,199 +1,55 @@
-/* General Styles */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f4f4f4;
-}
+/* Existing CSS styles */
 
-.container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-}
-
-header {
-  background: #333;
-  color: #fff;
-  padding-top: 30px;
-  min-height: 70px;
-  border-bottom: #007bff 3px solid;
-}
-
-header a {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
-}
-
-header ul {
-  padding: 0;
-  list-style: none;
-}
-
-header li {
-  display: inline;
-  padding: 0 20px 0 20px;
-}
-
-header nav {
+.user-auth {
   float: right;
-  margin-top: 10px;
 }
 
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.hero {
-  background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
-  height: 400px;
-  color: #fff;
-  text-align: center;
-  padding-top: 150px;
-}
-
-.hero h2 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 24px;
-  margin-bottom: 40px;
-}
-
-.cta-button {
-  background: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.cta-button:hover {
-  background: #0056b3;
-}
-
-.mods-section {
-  padding: 40px 0;
-  background: #fff;
-}
-
-.mods-section h2 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.mod-gallery {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.mod-item {
-  flex: 1 1 calc(33.333% - 40px);
-  margin: 20px;
-  background: #f4f4f4;
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.mod-item img {
-  max-width: 100%;
-  border-radius: 5px;
-}
-
-.download-button {
-  display: inline-block;
-  margin-top: 10px;
-  background: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.download-button:hover {
-  background: #0056b3;
-}
-
-.about-section {
-  padding: 40px 0;
-}
-
-.about-section h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.about-section p {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.contact-section {
-  padding: 40px 0;
-  background: #fff;
-}
-
-.contact-section h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.contact-section form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.contact-section .form-group {
-  margin-bottom: 20px;
-}
-
-.contact-section label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.contact-section input,
-.contact-section textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contact-section button {
-  display: block;
-  width: 100%;
-  background: #007bff;
+.user-auth button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  background-color: #007bff;
   color: #fff;
   border: none;
-  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.contact-section button:hover {
-  background: #0056b3;
+.user-auth button:hover {
+  background-color: #0056b3;
 }
 
-footer {
-  background: #333;
-  color: #fff;
+.auth-form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
   text-align: center;
-  padding: 20px 0;
-  margin-top: 20px;
 }
 
-footer p {
-  margin: 0;
+.auth-form h2 {
+  margin-bottom: 20px;
+}
+
+.auth-form input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-form button:hover {
+  background-color: #0056b3;
 }

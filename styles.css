@@ -1,53 +1,41 @@
-/* Existing CSS styles */
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.modal-content {
-  background-color: #fefefe;
-  margin: 10% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  border-radius: 5px;
-  max-width: 400px;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
 }
 
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-.buttons {
-  text-align: center;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.buttons button {
-  margin: 10px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+main {
+    padding: 20px;
 }
 
-.buttons button:hover {
-  background-color: #0056b3;
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
